@@ -5,7 +5,7 @@ name: Building..
 node:
   drone: ch1
 steps:
-  - name: build & push php8
+  - name: build & push
     image: plugins/docker
     settings:
       repo: ch1ch1/nginx-http3
@@ -33,6 +33,6 @@ trigger:
     - push
 ---
 kind: signature
-hmac: a0ea79f7d55a2a7deec7e4ed77c609e8d0aac92657571ed166d9d4ebb615dda7
+hmac: c9b9c42ed17af9f41dc6b4f2e22452bd2825873bd005ed18a20ee7c54a4ede5f
 
 ...
