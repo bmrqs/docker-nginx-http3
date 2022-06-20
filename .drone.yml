@@ -9,7 +9,7 @@ steps:
     image: plugins/docker
     settings:
       repo: ch1ch1/nginx-http3
-      tags: [ "1.16.1" ]
+      tags: [ "1.16.1", "latest" ]
       username: ch1ch1
       password:
         from_secret: dockerhub_token
@@ -33,6 +33,6 @@ trigger:
     - push
 ---
 kind: signature
-hmac: a7bbc964be8e70f17bf07a42f4b909911d800aac6b70b010573f498db6228d80
+hmac: a0ea79f7d55a2a7deec7e4ed77c609e8d0aac92657571ed166d9d4ebb615dda7
 
 ...
